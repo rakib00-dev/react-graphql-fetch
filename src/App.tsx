@@ -1,7 +1,7 @@
 function App() {
   return (
     <>
-      <h1>React + GraphQL API Fetch</h1>
+      <h1>React + GraphQL API Fetch - Apollo</h1>
     </>
   );
 }
