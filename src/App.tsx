@@ -1,3 +1,5 @@
+import './main.js';
+
 function App() {
   return (
     <>

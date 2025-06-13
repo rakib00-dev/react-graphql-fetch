@@ -1,4 +1,9 @@
-import { ApolloClient, ApolloProvider, gql } from '@apollo/client';
+import {
+  ApolloClient,
+  ApolloProvider,
+  gql,
+  InMemoryCache,
+} from '@apollo/client';
 
 const client = new ApolloClient({
   uri: 'https://flyby-router-demo.herokuapp.com/',
@@ -12,6 +17,8 @@ client
         locations {
           id
           name
+          description
+          photo
         }
       }
     `,
