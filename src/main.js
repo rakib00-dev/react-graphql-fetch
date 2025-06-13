@@ -1,0 +1,19 @@
+import { ApolloClient, ApolloProvider, gql } from '@apollo/client';
+
+const client = new ApolloClient({
+  uri: 'https://flyby-router-demo.herokuapp.com/',
+  cache: new InMemoryCache(),
+});
+
+client
+  .query({
+    query: gql`
+      query GetLocations {
+        locations {
+          id
+          name
+        }
+      }
+    `,
+  })
+  .then((res) => console.log(res));
