@@ -32,7 +32,7 @@ function App() {
   console.log(data.country.languages);
 
   return [data.country].map(
-    ({ capital, name, description, native, emoji, currency, languages }) => {
+    ({ capital, name, native, emoji, currency, languages }) => {
       return (
         <div key={name}>
           <h1>{name}</h1>
@@ -40,15 +40,14 @@ function App() {
           <p>{native}</p>
           <p>{emoji}</p>
           <p>{currency}</p>
-          <b>About this location:</b>
-          <p>{description}</p>
           <p>
             {'languages '}
             {languages.map((e: any) => (
-              <>
-                <span key={e.name}>{e.name}</span>
-                <span key={e.code}>{e.code}</span>
-              </>
+              <span key={e.code}>
+                <span>{e.name}</span>
+                <br />
+                <span>{e.code}</span>
+              </span>
             ))}
           </p>
           <br />
