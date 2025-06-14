@@ -1,4 +1,4 @@
-import './main.js';
+import { useQuery, gql } from '@apollo/client';
 
 function App() {
   return (
