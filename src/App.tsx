@@ -29,7 +29,7 @@ function App() {
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error : {error.message}</p>;
 
-  console.log(data.country.languages);
+  // console.log(data.country.languages);
 
   return [data.country].map(
     ({ capital, name, native, emoji, currency, languages }) => {
