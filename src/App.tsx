@@ -35,11 +35,11 @@ function App() {
     ({ capital, name, native, emoji, currency, languages }) => {
       return (
         <div key={name}>
-          <h1>{name}</h1>
-          <h2>{capital}</h2>
-          <p>{native}</p>
-          <p>{emoji}</p>
-          <p>{currency}</p>
+          <h1>name: {name}</h1>
+          <h2>capital: {capital}</h2>
+          <p>native: {native}</p>
+          <p>emoji: {emoji}</p>
+          <p>currency: {currency}</p>
           <p>
             {'languages '}
             {languages.map((e: any) => (
