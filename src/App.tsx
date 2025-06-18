@@ -16,13 +16,6 @@ const GET_LOCATIONS = gql`
   }
 `;
 
-// interface dataType {
-//   capital: string;
-//   name: string;
-//   description: string;
-//   photo: string;
-// }
-
 function App() {
   const { loading, error, data } = useQuery(GET_LOCATIONS);
 
